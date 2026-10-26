@@ -6,6 +6,10 @@ This project estimates the risk of heavy rainfall for six locations in Nepal usi
 
 The application displays forecast weather conditions and uses a trained Random Forest classifier to estimate the probability of heavy rainfall.
 
+## Application Preview
+
+![Heavy Rainfall Prediction App](screenshots/rainfall-app.png)
+
 ## Locations
 
 - Kathmandu
@@ -34,36 +38,36 @@ The application displays forecast weather conditions and uses a trained Random F
 
 ## Installation
 
-Clone or download this repository and open the project folder in a terminal.
+Clone or download this repository and open the project folder in PowerShell.
 
-Create and activate a virtual environment, then install the dependencies:
+Create a virtual environment:
 
-```bash
+```powershell
 python -m venv venv
 ```
 
-On Windows PowerShell:
+Activate the virtual environment:
 
 ```powershell
 .\venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
 ```
 
-If Streamlit is not included in `requirements.txt`, install it with:
+Install the required dependencies:
 
 ```powershell
-python -m pip install streamlit
+python -m pip install -r requirements.txt
 ```
 
 ## Run the Application
 
-From the project root, run:
+Start the Streamlit application:
 
 ```powershell
 python -m streamlit run app.py
 ```
 
-Open the local URL shown in the terminal, usually `http://localhost:8501`.
+Open the local URL displayed in the terminal, usually `http://localhost:8501`.
+
 
 ## Model and Data
 
