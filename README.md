@@ -1,5 +1,9 @@
 # Heavy Rainfall Prediction System for Nepal
 
+**Live Demo:** [Try the Nepal Heavy Rainfall Prediction App](https://nepal-heavy-rainfall-prediction-5tpm8lakdcsdqmlh469zpn.streamlit.app/)
+
+A machine learning application that predicts rainfall amounts and identifies heavy-rainfall risk across six locations in Nepal.
+
 ## Overview
 
 This project estimates the risk of heavy rainfall for six locations in Nepal using a machine-learning model and live weather forecasts.
