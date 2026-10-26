@@ -1,0 +1,40 @@
+venv/
+__pycache__/
+*.py[cod]
+*.class
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Large raw and intermediate datasets
+data/chirps/
+data/*.tif
+data/*.tiff
+
+# Large or unused models
+models/rainfall_model.pkl
+models/forecast_rainfall_model.pkl
+models/forecast_heavy_rain_model.pkl
+models/forecast_model_features.pkl
+
+# Temporary test and cache files
+
+# Other unused models
+models/heavy_rain_model.pkl
+models/logistic_regression_heavy_rain.pkl
+models/model_features.pkl
+
+# Local datasets and generated outputs
+data/
+
+# Other unused models
+models/heavy_rain_model.pkl
+models/logistic_regression_heavy_rain.pkl
+models/model_features.pkl
+
+# Local datasets and generated outputs
+data/
