@@ -12,18 +12,7 @@ import pandas as pd
 import requests
 
 
-df["date"] = pd.to_datetime(df["date"])
-df = df.sort_values("date").reset_index(drop=True)
 
-rain_col = "rainfall"  # match the column name in your forecast DataFrame
-doy = df["date"].dt.dayofyear
-
-df["doy_sin"] = np.sin(2 * np.pi * doy / 365.25)
-df["doy_cos"] = np.cos(2 * np.pi * doy / 365.25)
-df["log_forecast_rain"] = np.log1p(df[rain_col].clip(lower=0))
-df["rain_lag1"] = df[rain_col].shift(1).fillna(0.0)
-df["rain_lag2"] = df[rain_col].shift(2).fillna(0.0)
-df["rain_3d_sum"] = df[rain_col].rolling(3, min_periods=1).sum()
 
 MODEL_PATH = Path("models/nepal_heavy_rain_mos.joblib")
 LOG_PATH = Path("logs/live_predictions.csv")
