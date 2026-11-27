@@ -1,0 +1,7 @@
+{
+  "model_name": "LogisticRegression",
+  "threshold": 0.2709,
+  "oof_pr_auc": 0.3899,
+  "test_pr_auc": 0.1834,
+  "raw_ecmwf_test_pr_auc": 0.2127
+}
